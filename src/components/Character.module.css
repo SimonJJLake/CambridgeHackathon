@@ -1,0 +1,25 @@
+.container {
+  height: 20vh;
+  width: 20vh;
+  position: absolute;
+  overflow: hidden;
+}
+.layer {
+  background-size: 180vh 80vh;
+  width: 180vh;
+  height: 80vh;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  animation-iteration-count: infinite;
+  position: absolute;
+  image-rendering: pixelated;
+  animation-name: spriteX;
+}
+@keyframes spriteX {
+  from {
+    background-position-x: 0vh;
+  }
+  to {
+    background-position-x: -180vh;
+  }
+}
