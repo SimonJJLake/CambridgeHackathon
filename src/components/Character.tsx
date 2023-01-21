@@ -3,6 +3,11 @@ import styles from "./Character.module.css";
 export interface CharacterAnimations {
   walk: AnimationData;
   dagger: AnimationData;
+  spear: AnimationData;
+  shield: AnimationData;
+  bow: AnimationData;
+  spell: AnimationData;
+  hurt: AnimationData;
 }
 export interface AnimationData {
   layers: string[];
