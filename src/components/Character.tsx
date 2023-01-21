@@ -21,9 +21,11 @@ export interface AnimationData {
 export const Character = ({
   animationData,
   style,
+  animationDelay = 0,
 }: {
   animationData: AnimationData;
   style: any;
+  animationDelay?: number;
 }) => {
   return (
     <div className={styles.container} style={style}>
@@ -43,7 +45,7 @@ export const Character = ({
               backgroundSize: `${20 * animationData.gridWidth}vh ${
                 20 * animationData.gridHeight
               }vh`,
-              animationIterationCount: animationData.iterCount,
+              animationDelay: `${animationDelay}s`,
             }}
           />
         );
