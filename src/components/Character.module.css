@@ -5,9 +5,6 @@
   overflow: hidden;
 }
 .layer {
-  background-size: 180vh 80vh;
-  width: 180vh;
-  height: 80vh;
   background-repeat: no-repeat;
   object-fit: cover;
   animation-iteration-count: infinite;
@@ -17,9 +14,9 @@
 }
 @keyframes spriteX {
   from {
-    background-position-x: 0vh;
+    transform: translateX(0%);
   }
   to {
-    background-position-x: -180vh;
+    transform: translateX(-100%);
   }
 }
