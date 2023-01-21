@@ -1,0 +1,25 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.layer {
+  width: calc(400vh * 272 / 160);
+  height: 100vh;
+  background-size: contain;
+  background-position: 0;
+  image-rendering: pixelated;
+  position: absolute;
+  background-repeat: repeat-x;
+  animation: slide linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
